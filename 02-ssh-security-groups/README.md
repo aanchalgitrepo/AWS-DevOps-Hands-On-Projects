@@ -59,7 +59,7 @@ SSH access is restricted to my public IP instead of allowing connections from ev
 For an Amazon Linux instance from Windows PowerShell:
 
 ```powershell
-ssh -i "$HOME\Downloads\devops-lab-key.pem" ec2-user@YOUR_PUBLIC_IP
+ssh -i "$HOME\Downloads\mywebserver-key" ec2-user@32.236.200.218
 ```
 
 Replace the example key path, username, and IP address with the actual values for your instance.
