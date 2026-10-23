@@ -37,6 +37,7 @@ The Security Group controls whether SSH traffic can reach the instance.
 
 - Instance name: ec2-portfolio-lab
 - Operating system: Amazon Linux 2023
+- Region: Asia Pacific (Sydney)
 - Availability Zone: ap-southeast-2b
 - Instance type: t3.micro
 - SSH port: 22/TCP
