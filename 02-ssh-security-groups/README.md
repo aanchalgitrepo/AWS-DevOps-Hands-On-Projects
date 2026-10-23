@@ -78,25 +78,7 @@ uptime
 
 These commands verify the login user, hostname, current directory, Linux distribution, and system uptime.
 
-## 9. Screenshots and Evidence
-
-### EC2 Instance Running
-
-![EC2 instance running](screenshots/01-ec2-running.png)
-
-### SSH Security Group
-
-![SSH Security Group](screenshots/02-ssh-security-group.png)
-
-### Successful SSH Login
-
-![Successful SSH login](screenshots/03-ssh-login-success.png)
-
-### Linux Command Output
-
-![Linux command output](screenshots/04-linux-commands-output.png)
-
-## 10. Troubleshooting
+## 9. Troubleshooting
 
 Common SSH issues include:
 
@@ -106,7 +88,7 @@ Common SSH issues include:
 
 Document only the issues actually encountered and the fixes that were tested.
 
-## 11. Security Best Practices
+## 10. Security Best Practices
 
 - Never commit a private key (`.pem`) to GitHub.
 - Restrict inbound SSH access to a trusted source IP.
@@ -114,18 +96,18 @@ Document only the issues actually encountered and the fixes that were tested.
 - Use the correct Linux username and key pair.
 - Review SSH access and remove unnecessary rules.
 
-## 12. Cleanup
+## 11. Cleanup
 
 - Verify that the Security Group does not have unnecessary inbound rules.
 - Stop or terminate temporary EC2 resources when no longer needed.
 - Check for unused EBS volumes, snapshots, and other billable resources.
 - Review AWS Billing after completing the lab.
 
-## 13. Learning Outcomes
+## 12. Learning Outcomes
 
 After completing this lab, I learned how SSH authentication works, how to connect to a Linux EC2 instance, how Security Groups control SSH access, and how to verify a remote server using Linux commands.
 
-## 14. Lab Status
+## 13. Lab Status
 
 Status: [Planned / In Progress / Completed]
 
