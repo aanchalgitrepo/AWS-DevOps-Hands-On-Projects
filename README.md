@@ -33,8 +33,8 @@ User Browser → Internet → EC2 Security Group → EC2 Linux Instance → Apac
 
 | Lab | Topic | Status |
 |---|---|---|
-| 01 | Launch an EC2 Instance | Planned |
-| 02 | Connect Using SSH | Planned |
+| 01 | Launch an EC2 Instance | Completed |
+| 02 | Connect Using SSH | Completed |
 | 03 | Configure Security Groups | Planned |
 | 04 | Explore EC2 Instance States | Planned |
 | 05 | Create and Mount an EBS Volume | Planned |
