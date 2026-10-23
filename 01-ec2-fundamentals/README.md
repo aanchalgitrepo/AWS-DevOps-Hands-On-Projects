@@ -14,10 +14,10 @@ To launch a Linux EC2 instance and understand its basic configuration.
 ## 3. Configuration
 
 - Instance name: ec2-portfolio-lab
-- AMI: [Record the actual AMI used]
-- Instance type: [Record the actual type]
-- Region: [Record the actual Region]
-- Storage: [Record actual volume size and type]
+- AMI name: al2023-ami-2023.12.20261021.0-kernel-6.18-x86_64
+- Instance type: t3.micro
+- Availability Zone: ap-southeast-2b
+- Storage: actual volume size is 8 GiB and type is gp3
 
 ## 4. Steps Performed
 
