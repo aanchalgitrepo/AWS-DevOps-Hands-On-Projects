@@ -36,12 +36,12 @@ The Security Group controls whether SSH traffic can reach the instance.
 ## 5. Configuration
 
 - Instance name: ec2-portfolio-lab
-- Operating system: [Actual AMI / Linux distribution]
-- Region: [Actual AWS Region]
-- Instance type: [Actual instance type]
+- Operating system: Amazon Linux 2023
+- Availability Zone: ap-southeast-2b
+- Instance type: t3.micro
 - SSH port: 22/TCP
-- SSH username: [Actual Linux username]
-- Key pair name: [Actual key pair name; never upload the private key]
+- SSH username: ec2-user
+- Key pair name: mywebserver-key
 
 ## 6. Security Group Configuration
 
