@@ -110,6 +110,4 @@ After completing this lab, I learned how SSH authentication works, how to connec
 
 ## 13. Lab Status
 
-Status: [Planned / In Progress / Completed]
-
-Mark this lab as Completed only after successful connection, verification, screenshot upload, and documentation.
+Status: Completed
