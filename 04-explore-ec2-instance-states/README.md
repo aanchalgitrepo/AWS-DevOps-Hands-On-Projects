@@ -96,11 +96,11 @@ After completing this lab, I understand:
 
 ## Lab Status
 
-- [ ] Running state verified
-- [ ] Stopped state verified
-- [ ] Started state verified
-- [ ] Reboot completed
-- [ ] Screenshots added to the repository
+- [ x ] Running state verified
+- [ x ] Stopped state verified
+- [ x ] Started state verified
+- [ x ] Reboot completed
+- [ x ] Screenshots added to the repository
 
 ## References
 
