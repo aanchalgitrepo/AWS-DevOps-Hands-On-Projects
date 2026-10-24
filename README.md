@@ -35,10 +35,10 @@ User Browser → Internet → EC2 Security Group → EC2 Linux Instance → Apac
 |---|---|---|
 | 01 | Launch an EC2 Instance | Completed |
 | 02 | Connect Using SSH | Completed |
-| 03 | Configure Security Groups | Planned |
-| 04 | Explore EC2 Instance States | Planned |
-| 05 | Create and Mount an EBS Volume | Planned |
-| 06 | Create an EBS Snapshot | Planned |
+| 03 | Configure Security Groups | Completed |
+| 04 | Explore EC2 Instance States | Completed |
+| 05 | Create and Mount an EBS Volume | Completed |
+| 06 | Create an EBS Snapshot and Restore an EBS Volume from a Snapshot | Completed |
 | 07 | Deploy a Web Server | Planned |
 | 08 | Monitor and Troubleshoot EC2 | Planned |
 | 09 | Explore IAM Roles | Planned |
