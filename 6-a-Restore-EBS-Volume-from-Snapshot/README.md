@@ -1,4 +1,4 @@
-# Lab 07 - Restore an EBS Volume from a Snapshot
+# Lab 6-a - Restore an EBS Volume from a Snapshot
 
 ## Objective
 
