@@ -72,23 +72,6 @@ http://YOUR-PUBLIC-IP
 
 Replace `YOUR-PUBLIC-IP` with the instance's actual public IPv4 address.
 
-## Screenshots
-
-### 1. EC2 Instance Running
-![EC2 Instance Running](screenshots/01-ec2-instance-running.png)
-
-### 2. HTTP Security Group Rule
-![HTTP Security Group Rule](screenshots/02-security-group-http-rule.png)
-
-### 3. Apache Installation
-![Apache Installation](screenshots/03-apache-installation.png)
-
-### 4. Apache Service Running
-![Apache Service Running](screenshots/04-apache-service-running.png)
-
-### 5. Website Browser Output
-![Website Browser Output](screenshots/05-website-browser-output.png)
-
 ## Learning Outcomes
 - Learned how to launch an EC2 instance.
 - Configured an HTTP inbound security group rule.
