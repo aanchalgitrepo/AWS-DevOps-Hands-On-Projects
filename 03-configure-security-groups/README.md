@@ -19,9 +19,9 @@ Security Groups are stateful, so response traffic for an allowed connection is a
 ## 4. Lab Environment
 
 - Instance name: ec2-portfolio-lab
-- Operating system: [Actual AMI]
-- AWS Region: [Actual Region]
-- Security Group: [Actual Security Group name]
+- Operating system: (Amazon Linux 2023)al2023-ami-2023.12.20261021.0-kernel-6.18-x86_64
+- AWS Region: Asia Pacific (Sydney)
+- Security Group: sg-0ff468fd82dcd7ef0
 
 ## 5. Inbound Rules Configuration
 
@@ -43,25 +43,7 @@ SSH access should be restricted to a trusted source IP. HTTP should be enabled o
 7. Added an HTTP rule on TCP port 80 only if required for website hosting.
 8. Saved the rules and verified the configuration.
 
-## 7. Screenshots
-
-### EC2 Security Tab
-
-![EC2 Security Tab](screenshots/01-ec2-security-tab.png)
-
-### Inbound Rules Before Configuration
-
-![Inbound Rules Before](screenshots/02-inbound-rules-before.png)
-
-### SSH Port 22 Restricted to My IP
-
-![SSH Rule](screenshots/03-ssh-port-22-my-ip.png)
-
-### Final Inbound Rules
-
-![Final Security Group Rules](screenshots/04-ssh-http-rules.png)
-
-## 8. Verification
+## 7. Verification
 
 - [ ] Confirmed the correct Security Group is attached to the instance.
 - [ ] Verified the SSH inbound rule uses TCP port 22.
@@ -70,7 +52,7 @@ SSH access should be restricted to a trusted source IP. HTTP should be enabled o
 - [ ] Tested SSH connectivity after saving the rules.
 - [ ] Uploaded actual screenshots to GitHub.
 
-## 9. Troubleshooting
+## 8. Troubleshooting
 
 ### SSH Connection Timed Out
 
@@ -89,7 +71,7 @@ Possible causes:
 
 Note: Permission denied errors usually relate to SSH authentication rather than the Security Group rule itself.
 
-## 10. Security Best Practices
+## 9. Security Best Practices
 
 - Never expose SSH to 0.0.0.0/0 unless there is a specific, carefully controlled reason.
 - Allow only required ports.
@@ -97,18 +79,16 @@ Note: Permission denied errors usually relate to SSH authentication rather than 
 - Remove unused inbound rules.
 - Never upload private keys or AWS credentials to GitHub.
 
-## 11. Cleanup
+## 10. Cleanup
 
 - Remove temporary HTTP rules when no longer required.
 - Keep SSH access restricted to a trusted source.
 - Review AWS resources and billing after completing the lab.
 
-## 12. Learning Outcomes
+## 11. Learning Outcomes
 
 This lab helped me understand Security Group inbound rules, TCP ports, SSH access restrictions, HTTP access, and common network troubleshooting scenarios.
 
-## 13. Lab Status
+## 12. Lab Status
 
-Status: [Planned / In Progress / Completed]
-
-Mark this lab as Completed only after verifying the rules, testing the required connectivity, and uploading actual screenshots.
+Status: Planned
