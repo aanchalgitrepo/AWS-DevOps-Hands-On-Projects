@@ -1,58 +1,70 @@
 # Lab 06 - Create an EBS Snapshot
 
 ## Objective
-To create a snapshot of an Amazon EBS volume and verify its status in the AWS Management Console.
+To understand how to create an Amazon EBS Snapshot and how it is used for backup and recovery.
 
 ## What is an EBS Snapshot?
-An EBS Snapshot is a point-in-time backup of an Amazon EBS volume. It can be used to restore data by creating a new EBS volume from the snapshot.
 
-## AWS Services Used
+An Amazon EBS Snapshot is a point-in-time backup of an EBS volume. It helps protect data and allows us to create a new EBS volume from the snapshot when required.
+
+## AWS Service Used
 - Amazon EC2
-- Amazon EBS
+- Amazon Elastic Block Store (EBS)
 - EBS Snapshots
 
-## Steps Performed
+## Prerequisites
+- An AWS account
+- Access to the AWS Management Console
+- An existing EBS volume for the hands-on activity
 
-1. Logged in to the AWS Management Console.
-2. Opened the EC2 Dashboard.
-3. Navigated to Elastic Block Store → Volumes.
-4. Selected the existing EBS volume.
-5. Clicked Actions → Create snapshot.
-6. Added the description `Lab-06-EBS-Snapshot`.
-7. Created the snapshot.
-8. Navigated to Elastic Block Store → Snapshots.
-9. Verified the snapshot status was `Completed`.
+**Note:** This lab is documented for learning purposes. No AWS resources were created during this practice.
 
-## Snapshot Details
+## Steps to Create an EBS Snapshot
 
-- **Snapshot Name:** Lab-06-EBS-Snapshot
-- **Snapshot ID:** `<your-snapshot-id>`
-- **Source Volume ID:** `<your-volume-id>`
-- **Snapshot Status:** Completed
+1. Sign in to the AWS Management Console.
+2. Open the Amazon EC2 service.
+3. Navigate to Elastic Block Store → Volumes.
+4. Select the EBS volume to back up.
+5. Choose Actions → Create snapshot.
+6. Enter a description: `Lab-06-EBS-Snapshot`.
+7. Click Create snapshot.
+8. Navigate to Elastic Block Store → Snapshots.
+9. Find the snapshot and verify its status.
 
-## Screenshots
+## Snapshot Status
 
-### 1. EBS Volume Selected
-![EBS Volume Selected](screenshots/01-ebs-volume-selected.png)
+- `Pending`: The snapshot is being created.
+- `Completed`: The snapshot has completed successfully.
+- `Error`: The snapshot creation encountered a problem.
 
-### 2. Create Snapshot
-![Create Snapshot](screenshots/02-create-snapshot.png)
+## Use Cases
 
-### 3. Snapshot Pending
-![Snapshot Pending](screenshots/03-snapshot-pending.png)
+- Backing up important data.
+- Supporting data recovery.
+- Creating a new EBS volume from a snapshot.
+- Maintaining backups before major system changes.
 
-### 4. Snapshot Completed
-![Snapshot Completed](screenshots/04-snapshot-completed.png)
+## Cost Considerations
+
+- EBS Snapshot storage may incur charges.
+- Check AWS Free Tier eligibility, available credits, and current pricing before creating resources.
+- Delete unnecessary snapshots when they are no longer needed.
+- Deleting a snapshot does not delete the original EBS volume.
+
+## Practical Status
+
+- Documentation: Completed
+- AWS hands-on: Not performed
+- Snapshot ID: Not applicable
+- Screenshot: Not available because no AWS resources were created
 
 ## Key Learnings
 
-- Learned how to create an EBS Snapshot.
-- Understood how snapshots help with backup and recovery.
-- Learned how to verify snapshot status in AWS.
-- Understood that a snapshot can be used to create a new EBS volume.
-
-## Important Note
-EBS Snapshots may incur storage charges. Check AWS pricing and Billing before creating resources. Delete unnecessary snapshots when they are no longer required.
+- Understood the purpose of EBS Snapshots.
+- Learned the console workflow for snapshot creation.
+- Understood snapshot status and backup use cases.
+- Learned basic snapshot cost and cleanup precautions.
 
 ## Conclusion
-Successfully created an EBS Snapshot and verified its status in the AWS Management Console.
+
+This lab explains the EBS Snapshot creation workflow and its role in AWS backup and recovery. The practical activity can be performed later when suitable cost coverage is confirmed.
