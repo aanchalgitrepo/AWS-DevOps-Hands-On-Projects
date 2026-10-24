@@ -47,10 +47,10 @@ Add actual screenshots from the screenshots folder.
 
 ## 7. Verification
 
-- [ ] Instance reached Running state.
-- [ ] Status checks completed successfully.
-- [ ] Linux terminal connection worked.
-- [ ] Commands returned expected output.
+- [x] Instance reached Running state.
+- [x] Status checks completed successfully.
+- [x] Linux terminal connection worked.
+- [x] Commands returned expected output.
 
 ## 8. What I Learned
 
