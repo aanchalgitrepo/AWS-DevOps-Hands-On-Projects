@@ -64,7 +64,7 @@ This project is intended to demonstrate practical understanding of EC2 provision
 
 Aanchal Verma
 
-GitHub: https://github.com/aanchalgitrepo
+GitHub: https://github.com/aanchalgitrepo/AWS-EC2-Hands-On-Projects.git
 
 ## Disclaimer
 
