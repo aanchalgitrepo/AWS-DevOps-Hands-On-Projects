@@ -139,13 +139,13 @@ Check AWS Billing and Free Tier usage before and after the lab. Delete the pract
 
 ## Lab Status
 
-- [ ] EBS volume created
-- [ ] Volume attached to EC2
-- [ ] New disk identified using `lsblk`
-- [ ] Filesystem created
-- [ ] Volume mounted at `/data`
-- [ ] Test file created and verified
-- [ ] Screenshots uploaded to GitHub
+- [x] EBS volume created
+- [x] Volume attached to EC2
+- [x] New disk identified using `lsblk`
+- [x] Filesystem created
+- [x] Volume mounted at `/data`
+- [x] Test file created and verified
+- [x] Screenshots uploaded to GitHub
 
 ## References
 
