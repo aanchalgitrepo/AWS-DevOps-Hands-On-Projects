@@ -91,4 +91,4 @@ This lab helped me understand Security Group inbound rules, TCP ports, SSH acces
 
 ## 12. Lab Status
 
-Status: Planned
+Status: Completed
