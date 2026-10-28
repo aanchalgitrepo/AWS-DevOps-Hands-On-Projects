@@ -37,7 +37,14 @@ Defines which AWS actions are allowed or denied.
 The unique Amazon Resource Name used to identify an IAM Role.
 
 ### 4. EC2 Instance Profile
-A mechanism used to pass an IAM Role to an EC2 instance.
+A mechanism used to pass an IAM Role to an EC2 instance:
+
+If we practice on an existing EC2 instance in the future:
+1. EC2 → Open the instance.
+2. Select the instance.
+3. Actions → Security → Select Modify IAM role.
+4. Select your role.
+5. Click on update IAM role.
 
 ## Security Best Practices
 - Follow the principle of least privilege.
@@ -57,6 +64,7 @@ Add screenshots showing:
 - Created role details
 - Trust relationship
 - Role ARN
+- Attached EC2-S3-ReadOnly-Lab-Role to EC2-instance
 
 ## Result
 Understood the purpose of IAM Roles and how trust relationships and permissions control access to AWS resources.
