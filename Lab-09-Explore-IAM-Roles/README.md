@@ -1,4 +1,4 @@
-# Lab 09 — Explore IAM Roles
+# 09 — Explore IAM Roles
 
 ## Objective
 To understand AWS IAM Roles, trust relationships, permissions policies, and how IAM Roles are used by EC2 instances.
