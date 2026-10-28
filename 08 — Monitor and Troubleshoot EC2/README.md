@@ -48,20 +48,6 @@ Reviewed common EC2 issues:
 - Low disk space
 - Failed instance status checks
 
-## Screenshots
-
-### EC2 Status Checks
-![EC2 Status Checks](docs/screenshots/01-ec2-status-checks.png)
-
-### CloudWatch CPU Utilization
-![CloudWatch CPU Utilization](docs/screenshots/02-cloudwatch-cpu-utilization.png)
-
-### Linux System Monitoring
-![Linux System Monitoring](docs/screenshots/03-ec2-system-monitoring.png)
-
-### Troubleshooting Notes
-![Troubleshooting Notes](docs/screenshots/04-troubleshooting-notes.png)
-
 ## Key Learnings
 - Understood EC2 system and instance status checks.
 - Learned how to view CloudWatch metrics.
