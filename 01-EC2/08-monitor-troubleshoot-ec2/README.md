@@ -1,4 +1,3 @@
-
 # Lab 08 — Monitor and Troubleshoot EC2
 
 ## Objective
