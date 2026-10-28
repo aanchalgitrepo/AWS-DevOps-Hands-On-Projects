@@ -40,8 +40,8 @@ User Browser → Internet → EC2 Security Group → EC2 Linux Instance → Apac
 | 05 | Create and Mount an EBS Volume | Completed |
 | 06 | Create an EBS Snapshot and Restore an EBS Volume from a Snapshot | Completed |
 | 07 | Deploy a Web Server | Completed |
-| 08 | Monitor and Troubleshoot EC2 | Planned |
-| 09 | Explore IAM Roles | Planned |
+| 08 | Monitor and Troubleshoot EC2 | Completed |
+| 09 | Explore IAM Roles | Completed |
 | 10 | Cost Monitoring and Cleanup | Planned |
 
 ## Evidence and Screenshots
