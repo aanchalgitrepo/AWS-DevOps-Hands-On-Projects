@@ -79,7 +79,7 @@ Removed the temporary bucket policy after testing to restore the previous permis
       "Effect": "Deny",
       "Principal": "*",
       "Action": "s3:DeleteObject",
-      "Resource": "arn:aws:s3:::YOUR-BUCKET-NAME/*"
+      "Resource": "arn:aws:s3:::aanchal-s3-practice-2026/*"
     }
   ]
 }
