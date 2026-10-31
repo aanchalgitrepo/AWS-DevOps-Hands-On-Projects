@@ -32,6 +32,11 @@ Example:
 - Administrators
 - Testers
 
+## Lab Status
+
+- [x] Explore IAM Users
+- [ ] Explore IAM User Groups (Pending - option not available in current console)
+
 ## Practical Steps
 
 1. Open AWS Management Console.
