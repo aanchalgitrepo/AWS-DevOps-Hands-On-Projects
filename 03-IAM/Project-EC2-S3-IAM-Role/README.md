@@ -105,7 +105,7 @@ aws s3 cp test.txt s3://aanchal-ec2-iam-s3-demo/
 ### Step 8 — Download File from S3
 
 ```bash
-aws s3 cp s3://aanchal-ec2-iam-s3-demo/test.txt downloaded.txt
+aws s3 cp s3://aanchal-ec2-iam-s3-demo/test.txt ./test.txt
 ```
 
 ## Security Best Practices
