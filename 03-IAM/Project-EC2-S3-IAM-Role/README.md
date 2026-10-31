@@ -196,9 +196,9 @@ Permission:
 
 - `s3:ListBucket` — Allows listing objects inside the specified bucket.
 
-### Policy 3 — S3UploadObjectPolicy
+### Policy 3 — EC2-S3-Custom-Policy
 
-**Purpose:** Allows EC2 to upload objects to the specified S3 bucket.
+**Purpose:** Allows EC2 to upload objects to the specified S3 bucket and download objects from s3.
 
 Policy JSON:
 
@@ -208,7 +208,17 @@ Policy JSON:
   "Statement": [
     {
       "Effect": "Allow",
-      "Action": "s3:PutObject",
+      "Action": [
+        "s3:ListBucket"
+      ],
+      "Resource": "arn:aws:s3:::aanchal-ec2-iam-s3-demo"
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetObject",
+        "s3:PutObject"
+      ],
       "Resource": "arn:aws:s3:::aanchal-ec2-iam-s3-demo/*"
     }
   ]
@@ -217,32 +227,8 @@ Policy JSON:
 
 Permission:
 
+- `s3:GetObject` — Allows downloading objects from the bucket.
 - `s3:PutObject` — Allows uploading objects to the bucket.
-
-### Policy 4 — S3DownloadObjectPolicy
-
-**Purpose:** Allows EC2 to download and read objects from the specified S3 bucket.
-
-Policy JSON:
-
-```json
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Effect": "Allow",
-      "Action": "s3:GetObject",
-      "Resource": "arn:aws:s3:::aanchal-ec2-iam-s3-demo/*"
-    }
-  ]
-}
-```
-
-Permission:
-
-- `s3:GetObject` — Allows reading and downloading objects from the bucket.
-
-**Note:** The download policy was prepared for the next verification step. Confirm that it is attached to the role before marking the download task complete.
 
 ## Step 5 — Attach Policies to IAM Role
 
@@ -452,12 +438,6 @@ In this project, I learned how to securely connect an Amazon EC2 instance to Ama
 I created custom IAM policies to control S3 permissions and successfully listed S3 buckets, listed bucket contents, and uploaded a file from EC2 to S3.
 
 This project helped me understand IAM Roles, IAM Policies, temporary credentials, AWS CLI, and the Principle of Least Privilege.
-
-## Project Status
-
-**In Progress — Download verification pending.**
-
-After completing the download test, update the remaining checklist items and project status.
 
 ## Screenshots
 
