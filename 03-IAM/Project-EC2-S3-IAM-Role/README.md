@@ -410,6 +410,100 @@ Solution:
 
 Created a test file and uploaded it to the bucket.
 
+## Resource Cleanup
+
+After completing the project, I removed the AWS resources created for this hands-on practice to avoid unnecessary charges.
+
+### 1. Delete S3 Objects and Bucket
+
+- Open the **Amazon S3** console.
+- Select the bucket: `aanchal-ec2-iam-s3-demo`.
+- Delete all objects inside the bucket, including `test.txt`.
+- Delete the S3 bucket.
+
+**Verification:** Confirm that the bucket no longer appears in the S3 bucket list.
+
+### 2. Detach IAM Role from EC2
+
+- Open the **Amazon EC2** console.
+- Select the EC2 instance.
+- Go to **Actions → Security → Modify IAM role**.
+- Remove the attached IAM role, if it is still attached.
+- Save the changes.
+
+### 3. Delete IAM Role
+
+- Open the **IAM** console.
+- Navigate to **Roles**.
+- Search for `EC2-S3-Access-Role`.
+- Detach all attached policies.
+- Delete the IAM role.
+
+### 4. Delete Custom IAM Policies
+
+The following custom policies were created for this project:
+
+- `S3ListAllBucketsPolicy`
+- `S3ListSpecificBucketPolicy`
+- `EC2-S3-Custom-Policy`
+
+Steps:
+
+1. Open **IAM → Policies**.
+2. Search for each custom policy.
+3. Make sure the policy is not attached to any other IAM user, group, or role.
+4. Delete the policies.
+
+### 5. Terminate EC2 Instance
+
+- Open the **EC2** console.
+- Select the project EC2 instance.
+- Choose **Instance state → Terminate (delete) instance**.
+- Confirm the termination.
+
+**Verification:** Wait until the instance state changes to `Terminated`.
+
+> **Warning:** Terminating an EC2 instance is irreversible. Any data stored only on its instance store or non-persistent local storage may be lost. Save important files and screenshots before termination.
+
+### 6. Check Other AWS Resources
+
+After terminating the EC2 instance, check the following services for any resources created during the project:
+
+| AWS Service | What to Check |
+|---|---|
+| EBS Volumes | Delete unused volumes after confirming they are not needed. |
+| EBS Snapshots | Delete project snapshots if they are no longer required. |
+| Elastic IPs | Release unused allocated Elastic IP addresses. |
+| Network Interfaces | Check for unused network interfaces. |
+| Load Balancers | Delete project load balancers, if created. |
+
+Only delete resources that belong to this project and are no longer required. Do not delete AWS-managed or shared resources without checking their purpose.
+
+### 7. Verify AWS Billing and Usage
+
+- Open **Billing and Cost Management**.
+- Review the **Bills** section.
+- Check Free Tier / Free Plan usage, where available.
+- Review the selected AWS Region and other regions if you created resources there.
+
+**Important:** Deleting project resources helps prevent further resource-related charges, but it does not automatically remove charges already incurred or charges from other resources.
+
+### Cleanup Status
+
+- [x] S3 object deleted
+- [x] S3 bucket deleted
+- [x] IAM role detached from EC2
+- [x] Custom policies detached from the role
+- [x] IAM role deleted
+- [x] Custom IAM policies deleted
+- [x] EC2 instance terminated
+- [x] EBS volumes checked
+- [x] EBS snapshots checked
+- [x] Elastic IPs checked
+- [x] Billing and usage reviewed
+
+**Note:** Update the remaining checkboxes after verifying each cleanup step in the AWS Console.
+
 ## Security Best Practices
 
 - Do not store AWS Access Keys or Secret Access Keys on EC2.
